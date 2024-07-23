@@ -1,17 +1,6 @@
-import { Button, StyleSheet, Text, View } from 'react-native';
-import React from 'react';
-import { SignInNavigationProps } from '../../routes';
-
-const SignIn = ({ navigation }: SignInNavigationProps) => {
-  return (
-    <View style={styles.container}>
-      <Text>SignIn</Text>
-      <Button title="Sign Up" onPress={() => navigation.navigate('SignUp')} />
-    </View>
-  );
-};
-
-export default SignIn;
+import { Button, StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { SignInNavigationProps } from '@routes/index'
 
 const styles = StyleSheet.create({
   container: {
@@ -22,4 +11,15 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 24,
   },
-});
+})
+
+function SignIn({ navigation }: SignInNavigationProps) {
+  return (
+    <View style={styles.container}>
+      <Text>SignIn</Text>
+      <Button title="Sign Up" onPress={() => navigation.navigate('SignUp')} />
+    </View>
+  )
+}
+
+export default SignIn

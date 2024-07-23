@@ -1,7 +1,13 @@
-import { StyleSheet } from 'react-native';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import Routes from './src/routes';
-import { StatusBar } from 'expo-status-bar';
+import { StyleSheet } from 'react-native'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
+import { StatusBar } from 'expo-status-bar'
+import Routes from '@routes/index'
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+})
 
 export default function App() {
   return (
@@ -9,11 +15,5 @@ export default function App() {
       <Routes />
       <StatusBar style="auto" />
     </GestureHandlerRootView>
-  );
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});

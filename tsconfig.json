@@ -2,7 +2,7 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
-    "target": "ES6",
+    "target": "ES2023",
     "module": "CommonJS",
     "jsx": "react-native",
     "resolveJsonModule": true,
@@ -20,7 +20,8 @@
       "@services/*": ["./src/services/*"],
       "@theme/*": ["./src/theme/*"],
       "@types/*": ["./src/types/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@helpers/*": ["./src/helpers/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],

@@ -1,6 +1,6 @@
 import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { SignUpNavigationProps } from '@routes/index'
+import { SignUpNavigationProps } from '@routes/types'
 
 const styles = StyleSheet.create({
   container: {

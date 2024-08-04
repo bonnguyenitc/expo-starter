@@ -10,5 +10,7 @@
 - Prettier
 - MMKV
 - React Native SVG
+- Multi Language Support
+- Theme Support
 
 #### License: MIT

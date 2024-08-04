@@ -14,6 +14,7 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.18",
     "@react-navigation/native-stack": "^6.10.1",
+    "axios": "^1.7.2",
     "expo": "~51.0.22",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
@@ -24,6 +25,7 @@
     "react-native-safe-area-context": "^4.10.8",
     "react-native-screens": "^3.32.0",
     "react-native-svg": "^15.4.0",
+    "react-native-unistyles": "^2.9.1",
     "zustand": "^4.5.4"
   },
   "devDependencies": {

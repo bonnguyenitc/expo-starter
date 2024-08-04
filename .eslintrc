@@ -18,6 +18,8 @@
     "react/react-in-jsx-scope": "off",
     "import/no-cycle": "off",
     "import/order": "error",
+    "import/no-extraneous-dependencies": "off",
+    "react/require-default-props": "off",
   },
   "env": {
     "react-native/react-native": true,

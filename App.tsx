@@ -1,7 +1,10 @@
+import '@theme/unistyles'
 import { StyleSheet } from 'react-native'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { StatusBar } from 'expo-status-bar'
 import Routes from '@routes/index'
+import useThemeStore from '@data/useThemeStore'
+import { useInitialTheme } from 'react-native-unistyles'
 
 const styles = StyleSheet.create({
   container: {
@@ -10,10 +13,12 @@ const styles = StyleSheet.create({
 })
 
 export default function App() {
+  const { theme } = useThemeStore()
+  useInitialTheme(theme)
   return (
     <GestureHandlerRootView style={styles.container}>
       <Routes />
-      <StatusBar style="auto" />
+      <StatusBar style={theme === 'dark' ? 'light' : 'dark'} />
     </GestureHandlerRootView>
   )
 }

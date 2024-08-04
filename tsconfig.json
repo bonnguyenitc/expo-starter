@@ -21,7 +21,8 @@
       "@theme/*": ["./src/theme/*"],
       "@types/*": ["./src/types/*"],
       "@utils/*": ["./src/utils/*"],
-      "@helpers/*": ["./src/helpers/*"]
+      "@helpers/*": ["./src/helpers/*"],
+      "@i18n/*": ["./src/i18n/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],

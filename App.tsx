@@ -1,4 +1,5 @@
 import '@theme/unistyles'
+import '@i18n/i18n'
 import { StyleSheet } from 'react-native'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { StatusBar } from 'expo-status-bar'

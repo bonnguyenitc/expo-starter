@@ -3,6 +3,7 @@ import React from 'react'
 import { createStyleSheet, UnistylesRuntime, useStyles } from 'react-native-unistyles'
 import useThemeStore from '@data/useThemeStore'
 import Screen from '@components/common/ui/screen'
+import useTranslation from '@hooks/useTranslation'
 
 const stylesSheet = createStyleSheet((theme) => ({
   container: {
@@ -20,12 +21,15 @@ const stylesSheet = createStyleSheet((theme) => ({
 function Home() {
   const { styles } = useStyles(stylesSheet)
   const { setTheme } = useThemeStore()
+  const { t } = useTranslation()
   return (
     <Screen>
       <View style={styles.container}>
-        <Text style={styles.text}>Home</Text>
+        <Text style={styles.text}>{t('common:welcome')}</Text>
         <Button
-          title={`Change theme to ${UnistylesRuntime.themeName === 'light' ? 'dark' : 'light'}`}
+          title={t('common:change_theme', {
+            theme: UnistylesRuntime.themeName === 'light' ? 'dark' : 'light',
+          })}
           onPress={() => {
             setTheme(UnistylesRuntime.themeName === 'light' ? 'dark' : 'light')
             UnistylesRuntime.setTheme(UnistylesRuntime.themeName === 'light' ? 'dark' : 'light')

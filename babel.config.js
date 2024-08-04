@@ -23,6 +23,7 @@ module.exports = function (api) {
             '@types': './src/types',
             '@utils': './src/utils',
             '@helpers': './src/helpers',
+            '@i18n': './src/i18n',
           },
         },
       ],
